@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* width: 800px;    Deixa o tamanho da tela 800px fixo */
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;    /* Deixa sentralizado */
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae non minima. Eum accusamus porro alias labore nam commodi, facere earum in inventore error sapiente explicabo veniam assumenda? Odit, doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempora neque laborum architecto rem animi quos quia, accusantium, illo perferendis provident dolor quod aliquam fugiat aspernatur explicabo impedit, porro cupiditate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolorum sequi impedit, qui quisquam voluptatibus odit ad dignissimos, atque ut vitae cumque officiis ullam explicabo eum provident, dolorem nam quis.</p>
+
+        <picture>   <!-- Troca de imagem quando muda o tamanho da tela -->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae non minima. Eum accusamus porro alias labore nam commodi, facere earum in inventore error sapiente explicabo veniam assumenda? Odit, doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempora neque laborum architecto rem animi quos quia, accusantium, illo perferendis provident dolor quod aliquam fugiat aspernatur explicabo impedit, porro cupiditate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere dolorum sequi impedit, qui quisquam voluptatibus odit ad dignissimos, atque ut vitae cumque officiis ullam explicabo eum provident, dolorem nam quis.</p>
+    </main>
+</body>
+</html>
