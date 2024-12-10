@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;              /*Deixa a imagem com tamanho maximo*/
-            background-color: black;            /*Usar uma cor mesmo c for usar imagem de fundo*/
+            /*background-color: black;            /*Usar uma cor mesmo c for usar imagem de fundo
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;            /*Não exibe 100% da imagem mais ocupa 100% da view port*/
 
-            /*Em alguns casos trabalhar com px, 100% (Amplia a imagem conforme a tela mais deixa um espaço em baixo e c usar com o repeat vai fica a imagem repetindo em baixo), 100% 100% (A imagem distoce de acordo com o tamanho da tela) ou o contain que exibe a imagem 100% da tela (Deixa duas barras em cima, em baixo ou dos lados*/
+            /*Em alguns casos trabalhar com px, 100% (Amplia a imagem conforme a tela mais deixa um espaço em baixo e c usar com o repeat vai fica a imagem repetindo em baixo), 100% 100% (A imagem distoce de acordo com o tamanho da tela) ou o contain que exibe a imagem 100% da tela (Deixa duas barras em cima, em baixo ou dos lados
+
+            background-attachment: fixed;   /*Padrão é scroll o fundo rola junto com o texto, o fixed a imagem de fundo fica fixa*/
+
+            /*Shorthand - background
+              color > image > position > repeat > [size] > attachment
+            */
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;       /*Diminue a largura*/
+            max-width: 400px;       /*Diminue a largura*/
             padding: 10px;      /*Da um espaço entre a caixa e o texto*/
             margin: auto;
             border: 1px solid darkblue;
