@@ -5,7 +5,7 @@
     padding: 0px;
 }
 
-html, body {
+html, body {                        /*html e body vai ter a mesma configuração*/
     min-height: 100vh;
     background-color: darkgray;
 }
