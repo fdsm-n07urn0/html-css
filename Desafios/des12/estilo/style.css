@@ -32,7 +32,7 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;          /*font-variant: small-caps deixa o texto maiucula mais as primeiras letras ficam maiores*/
     font-family: var(--font2);         /*text-transform: uppercase coloca o texto em maiuscula*/
-    font-size: 10vw;       /*O titulo aumenta ou diminue de acordo com o tamanho da tela*/
+    font-size: 10vw;                   /*O titulo aumenta ou diminue de acordo com o tamanho da tela*/
 }                                 
 
 header > p {
