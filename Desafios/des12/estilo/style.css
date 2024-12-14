@@ -32,7 +32,7 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;          /*font-variant: small-caps deixa o texto maiucula mais as primeiras letras ficam maiores*/
     font-family: var(--font2);         /*text-transform: uppercase coloca o texto em maiuscula*/
-    font-size: 10vw;       /*O titulo almenta ou diminue de acordo com o tamanho da tela*/
+    font-size: 10vw;       /*O titulo aumenta ou diminue de acordo com o tamanho da tela*/
 }                                 
 
 header > p {
@@ -55,7 +55,7 @@ section {   /*As configurações feitas aqui server para section normal e para s
     line-height: 2em;       /*Da um espaço entre o texto*/
     padding-left: 30px;
     font-family: var(--font3);
-    font-size: 3.5vw;           /*O texto almenta ou diminue de acordo com o tamanho da tela*/
+    font-size: 3.5vw;           /*O texto aumenta ou diminue de acordo com o tamanho da tela*/
 }
 
 section.normal {
