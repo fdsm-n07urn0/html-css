@@ -19,6 +19,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
        thead, tfoot {
             background-color: gray;
             color: white;
@@ -34,6 +41,7 @@
     <!--
         ANATOMIA DE UMA TABELA GRANDE
         TABLE
+            CAPTION -> LEGENDA DA TABELA
             THEAD   -> CABEÇALHO DA TABELA
                 TR, TD, TH
             TBODY   -> CORPO DA TABELA
@@ -42,13 +50,14 @@
                 TR, TD, TH
     -->
     <table>
-        <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
+        <caption>População das Unidades Federativas</caption>
+        <thead>   
+            <tr>       <!--Titulo usar th-->
+                <th scope="col">Estado</th>    <!--scope="col" para coluna-->
+                <th scope="col" style="width: 100px;">População</th>     <!--scope não altera em nada na parte visual mais é importante usar por causa dos mecanismos de busca do google-->
         </thead>
         <tbody>
-            <tr>
+            <tr>       <!--Dados usar td-->
                 <td>Acre</td>
                 <td class="num">830 018</td>
             </tr>
@@ -159,7 +168,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>    <!--scope="row" para linha-->
                 <td class="num"><strong>210 147 125</strong></td>
             </tr>
         </tfoot>
