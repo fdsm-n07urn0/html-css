@@ -31,6 +31,23 @@
             color: white;
         }
 
+        /*pixeldo classe :nth-child(2n) 2n quer dizer de duas em duas (efeito zebrado), mais pode botar de 3 em 3 etc...*/
+
+        tbody > tr:nth-child(2n) {     /* Se for par o n vai ser 2n, se for impar usar odd ou n vai ser 2n+1 */
+            background-color: lightgray;
+        }
+
+        /* Ou fazer dessa forma (pode muda a cor também)
+
+        tbody > tr:nth-child(odd) {  ou 2n-1
+            background-color: white;
+        }
+        
+        tbody > tr:nth-child(even) {  ou 2n
+            background-color: lightgray;
+        }
+        */
+
         td.num {
             text-align: right;
         }
