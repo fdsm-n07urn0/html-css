@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;         /* Para poder usar o sticky */
         }
 
         td, th {
@@ -29,6 +30,12 @@
        thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {     /*Para deixa o cabeçalho da tabela fixo, mais não funciona em todos os navegadores*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         /*pixeldo classe :nth-child(2n) 2n quer dizer de duas em duas (efeito zebrado), mais pode botar de 3 em 3 etc...*/
@@ -190,5 +197,18 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta ex maxime in nulla laboriosam repellendus recusandae, ad neque eaque quo corrupti ducimus minima dolores quia. Commodi facilis temporibus et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, sint maiores accusamus error obcaecati temporibus veritatis aliquid, quod sequi deleniti, saepe nam voluptatem delectus tempore quas eum sed ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem ipsa eos repellat rem exercitationem iure, officiis ratione iusto illum, quia vitae, numquam id saepe libero earum dolore laboriosam obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis repellendus quasi quo culpa quas, facere architecto tempore provident soluta! Molestias officiis, recusandae corrupti quo velit expedita illo aliquid perferendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta ex maxime in nulla laboriosam repellendus recusandae, ad neque eaque quo corrupti ducimus minima dolores quia. Commodi facilis temporibus et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, sint maiores accusamus error obcaecati temporibus veritatis aliquid, quod sequi deleniti, saepe nam voluptatem delectus tempore quas eum sed ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem ipsa eos repellat rem exercitationem iure, officiis ratione iusto illum, quia vitae, numquam id saepe libero earum dolore laboriosam obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis repellendus quasi quo culpa quas, facere architecto tempore provident soluta! Molestias officiis, recusandae corrupti quo velit expedita illo aliquid perferendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta ex maxime in nulla laboriosam repellendus recusandae, ad neque eaque quo corrupti ducimus minima dolores quia. Commodi facilis temporibus et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, sint maiores accusamus error obcaecati temporibus veritatis aliquid, quod sequi deleniti, saepe nam voluptatem delectus tempore quas eum sed ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem ipsa eos repellat rem exercitationem iure, officiis ratione iusto illum, quia vitae, numquam id saepe libero earum dolore laboriosam obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis repellendus quasi quo culpa quas, facere architecto tempore provident soluta! Molestias officiis, recusandae corrupti quo velit expedita illo aliquid perferendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta ex maxime in nulla laboriosam repellendus recusandae, ad neque eaque quo corrupti ducimus minima dolores quia. Commodi facilis temporibus et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, sint maiores accusamus error obcaecati temporibus veritatis aliquid, quod sequi deleniti, saepe nam voluptatem delectus tempore quas eum sed ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem ipsa eos repellat rem exercitationem iure, officiis ratione iusto illum, quia vitae, numquam id saepe libero earum dolore laboriosam obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis repellendus quasi quo culpa quas, facere architecto tempore provident soluta! Molestias officiis, recusandae corrupti quo velit expedita illo aliquid perferendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta ex maxime in nulla laboriosam repellendus recusandae, ad neque eaque quo corrupti ducimus minima dolores quia. Commodi facilis temporibus et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, sint maiores accusamus error obcaecati temporibus veritatis aliquid, quod sequi deleniti, saepe nam voluptatem delectus tempore quas eum sed ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem ipsa eos repellat rem exercitationem iure, officiis ratione iusto illum, quia vitae, numquam id saepe libero earum dolore laboriosam obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis repellendus quasi quo culpa quas, facere architecto tempore provident soluta! Molestias officiis, recusandae corrupti quo velit expedita illo aliquid perferendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta ex maxime in nulla laboriosam repellendus recusandae, ad neque eaque quo corrupti ducimus minima dolores quia. Commodi facilis temporibus et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, sint maiores accusamus error obcaecati temporibus veritatis aliquid, quod sequi deleniti, saepe nam voluptatem delectus tempore quas eum sed ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem ipsa eos repellat rem exercitationem iure, officiis ratione iusto illum, quia vitae, numquam id saepe libero earum dolore laboriosam obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis repellendus quasi quo culpa quas, facere architecto tempore provident soluta! Molestias officiis, recusandae corrupti quo velit expedita illo aliquid perferendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta ex maxime in nulla laboriosam repellendus recusandae, ad neque eaque quo corrupti ducimus minima dolores quia. Commodi facilis temporibus et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit, sint maiores accusamus error obcaecati temporibus veritatis aliquid, quod sequi deleniti, saepe nam voluptatem delectus tempore quas eum sed ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem ipsa eos repellat rem exercitationem iure, officiis ratione iusto illum, quia vitae, numquam id saepe libero earum dolore laboriosam obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis repellendus quasi quo culpa quas, facere architecto tempore provident soluta! Molestias officiis, recusandae corrupti quo velit expedita illo aliquid perferendis.</p>
 </body>
 </html>
