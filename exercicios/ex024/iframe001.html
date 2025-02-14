@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>   /* Se tiver alguma configuração de altura e largura no iframe dentro do body vai valer a que tiver no style */
+        iframe {           
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;    /* Da pra personalizar o frameborder usando ex: boder: 1px solid black; */
+        }
+    </style>
 </head>
 <body>
     <!-- OBS: O iframe possui falhas de segurança mais ja é possivel reduzir essas falhas -->
     <h1>Testando o uso de um iframe</h1>
-    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> para aprender a programar.</p>
+    <p>Acessando o site do 
+        <!-- Tamanho padrão 300x150-->
+         <!-- Pode mudar a altura ex: height="500" e largura ex: width="500-->
+          <!-- frameborder="0" tira a borda, frameborder="1" coloca a borda-->
+           
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="yes">   <!-- scolling="yes" permite a rolagem, scolling="no" nao permite a rolagem, scolling="auto" depende do conteudo mais depende do navegador -->
+        
+        <a href="https://www.cursoemvideo.com" target="_blank" rel="external">CursoemVideo</a>
+    </iframe> para aprender a programar.</p>
 
-    <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> também é muito legal</p>   <!-- Existe alguns sites que nao aceitam iframe (Possui uma proteção) -->
+    <p>O repositório do Guanabara <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+        no <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Github</a>
+    </iframe> também é muito bom.</p>
 </body>
 </html>
